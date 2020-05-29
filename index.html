@@ -2,14 +2,14 @@
 	<head>
 	</head>
 	<body>
-		This simple repository frontend provides access to packaged versions of software developed by the <A HREF="https://synergy.cs.vt.edu">Synergy Lab at Virginia Tech</A>. All code is subject to the license terms packaged within. Most source is available at <A HREF="https://github.com/vtsynergy">GitHub</A>. These are research artifacts, and we hope you find them useful, but provide no warranty, expressed or implied.
-<H2> APT/DPKG Packages</H>
-To add the public key for these apt repositories run the following command
-<tt>wget -qO - https://vtsynergy.github.io/packages/synergy_package-pub.gpg.key | sudo apt-key add -</tt>
-Then create an entry in <tt>/etc/apt/sources.list</tt> or a new file in <tt>/etc/apt/sources.list.d/</tt>
-<tt>deb https://vtsynergy.github.io/packages/&lt;OS&gt; &lt;distro&gt; main</tt>
-where &lt;OS&gt; is one of [debian, ubuntu] and distro is a supported distribution. You can browse which are available at <A HREF="apt/debian">apt/debian</a> and <A HREF="apt/ubuntu">apt/ubuntu</A>.
-<H2> RPM Packages </H>
+		This simple repository frontend provides access to packaged versions of software developed by the <A HREF="https://synergy.cs.vt.edu">Synergy Lab at Virginia Tech</A>. All code is subject to the license terms packaged within. Most source is available at <A HREF="https://github.com/vtsynergy">GitHub</A>. These are research artifacts, and we hope you find them useful, but provide no warranty, expressed or implied.<BR>
+<H2> APT/DPKG Packages</H2>
+To add the public key for these apt repositories run the following command<BR>
+<tt>wget -qO - https://vtsynergy.github.io/packages/synergy_package-pub.gpg.key | sudo apt-key add -</tt><BR>
+Then create an entry in <tt>/etc/apt/sources.list</tt> or a new file in <tt>/etc/apt/sources.list.d/</tt><BR>
+<tt>deb https://vtsynergy.github.io/packages/&lt;OS&gt; &lt;distro&gt; main</tt><BR>
+where &lt;OS&gt; is one of [debian, ubuntu] and distro is a supported distribution. For debian, one of [jessie, stretch, buster, bullseye] and for ubuntu one of [bionic, focal].
+<H2> RPM Packages </H2>
 	Coming Soon
 	</body>
 </html>
