@@ -1,0 +1,248 @@
+Package: metacl
+Source: metamorph
+Version: 0.3-1
+Architecture: amd64
+Maintainer: Paul Sathre <sath6220@cs.vt.edu>
+Installed-Size: 21801
+Depends: libclang-common-6.0-dev
+Enhances: metamorph-opencl, metamorph-opencl-dev
+Multi-Arch: same
+Priority: optional
+Section: devel
+Filename: pool/main/m/metamorph/metacl_0.3-1_amd64.deb
+Size: 5873664
+SHA256: 081eacf1e9b963539f841aba8a2accacd513a2bc27b612852190eeed82f68d23
+SHA1: 3057a3aa7f7687a1797c9f1c961457de5ba51f59
+MD5sum: 7e23a333d96888229b8c8b7871914504
+Description: MetaCL OpenCL Host Autogenerator
+ MetaCL is an autogenerator for OpenCL host code based on the Clang/LLVM compiler framework.
+ Given a set of OpenCL kernel file(s), it generates the appropriate boilerplate to initialze
+  the kernels and invoke them, wrapped inside a convenient and simplified API.
+ Generated code is dependent on metamorph-opencl and metamorph to run, and corresponding
+  dev packages to compile, but the MetaCL tool itself does not.
+
+Package: metamorph
+Version: 0.3-1
+Architecture: amd64
+Maintainer: Paul Sathre <sath6220@cs.vt.edu>
+Installed-Size: 51
+Depends: metamorph-openmp | metamorph-opencl | metamorph-cuda
+Recommends: metamorph-openmp
+Suggests: metamorph-cuda, metamorph-opencl, metamorph-mpi, metamorph-profiling
+Multi-Arch: same
+Priority: optional
+Section: libs
+Filename: pool/main/m/metamorph/metamorph_0.3-1_amd64.deb
+Size: 12456
+SHA256: bf907fcff96074ee5afb760759788b8c152640113fc436e72ec91f81541f8f66
+SHA1: 3e21b72c7e7f73b7ec82b40c0893ae5b07919809
+MD5sum: 71c253089d6bc4f81d57ba11e2a8d520
+Description: MetaMorph Core Library
+ The MetaMorph Core Library implements the core API and dynamically-loaded bridge across supported backends
+
+Package: metamorph-cuda
+Source: metamorph
+Version: 0.3-1
+Architecture: amd64
+Maintainer: Paul Sathre <sath6220@cs.vt.edu>
+Installed-Size: 271
+Depends: metamorph, libcuda1
+Enhances: metamorph
+Multi-Arch: same
+Priority: optional
+Section: libs
+Filename: pool/main/m/metamorph/metamorph-cuda_0.3-1_amd64.deb
+Size: 65952
+SHA256: 778fd5b9095f77b2c4455aaae4c9bbbec25e2cde8c188f665bc05dcb8236487b
+SHA1: ae25723aa828babea8c52bda8e13081cf59e6054
+MD5sum: a520e12eff085507b046ab4c40df311f
+Description: MetaMorph CUDA Backend
+ The MetaMorph OpenCL Backend implements the CUDA versions of MetaMorph's top-level functions.
+
+Package: metamorph-cuda-dev
+Source: metamorph
+Version: 0.3-1
+Architecture: all
+Maintainer: Paul Sathre <sath6220@cs.vt.edu>
+Installed-Size: 28
+Depends: metamorph-cuda, metamorph-dev
+Priority: optional
+Section: libs
+Filename: pool/main/m/metamorph/metamorph-cuda-dev_0.3-1_all.deb
+Size: 5456
+SHA256: 6793b0c6d0af748d687a3614faa0dec8fe071f5413da35d5916b992c0b5409e8
+SHA1: e0f6c0e1ba7a621ebb176665b80379e1174d4879
+MD5sum: ed6bec3bfce5540c0f0fa196c7c21eac
+Description: MetaMorph CUDA Backend Headers
+ Header files to develop a new application using features specific to the CUDA backend
+
+Package: metamorph-dev
+Source: metamorph
+Version: 0.3-1
+Architecture: all
+Maintainer: Paul Sathre <sath6220@cs.vt.edu>
+Installed-Size: 81
+Depends: metamorph
+Priority: optional
+Section: libs
+Filename: pool/main/m/metamorph/metamorph-dev_0.3-1_all.deb
+Size: 13576
+SHA256: 9083646b4e00b62daae699b54823fa35942e238825a1aa9bbbd0943795661ff4
+SHA1: 338d5a44aa828a12eb097a518997a23a82d9c757
+MD5sum: f5bf9517408620a642b98d7255d868a3
+Description: MetaMorph Core Headers
+ Header files to develop a new application based on only the core MetaMorph capabilities
+
+Package: metamorph-mpi
+Source: metamorph
+Version: 0.3-1
+Architecture: amd64
+Maintainer: Paul Sathre <sath6220@cs.vt.edu>
+Installed-Size: 31
+Depends: metamorph, mpi-default-bin
+Enhances: metamorph
+Multi-Arch: same
+Priority: optional
+Section: libs
+Filename: pool/main/m/metamorph/metamorph-mpi_0.3-1_amd64.deb
+Size: 7748
+SHA256: 1cc15f4763b826521556a977a1e627d4cb15dfc1a7b7306f44358423005c82d8
+SHA1: 3afee30f52a702f99f170a963e6987f55d5b7b07
+MD5sum: 36fe9396cf55195c37ce5c39a6288b0b
+Description: MetaMorph MPI Interoperability Plugin
+ Provides operations to send and receive MetaMorph device buffers across MPI
+
+Package: metamorph-mpi-dev
+Source: metamorph
+Version: 0.3-1
+Architecture: all
+Maintainer: Paul Sathre <sath6220@cs.vt.edu>
+Installed-Size: 23
+Depends: metamorph-mpi, metamorph-dev, mpi-default-dev
+Enhances: metamorph
+Priority: optional
+Section: libs
+Filename: pool/main/m/metamorph/metamorph-mpi-dev_0.3-1_all.deb
+Size: 4868
+SHA256: d3d2e5f37815ce1a26dc79f675e166c3f4638074e626a6edd78b2ae4eb237585
+SHA1: c734ce26decf7d4304d2d623d5b1456c33e94429
+MD5sum: c03813414695f714a9e66e31848e2ca2
+Description: MetaMorph MPI Interoperability Plugin
+ Header files to develop a new application using functionality from the MPI plugin
+
+Package: metamorph-opencl
+Source: metamorph
+Version: 0.3-1
+Architecture: amd64
+Maintainer: Paul Sathre <sath6220@cs.vt.edu>
+Installed-Size: 147
+Depends: metamorph, opencl-icd | amd-opencl-icd, libopencl-1.1-1
+Suggests: metacl
+Enhances: metamorph
+Multi-Arch: same
+Priority: optional
+Section: libs
+Filename: pool/main/m/metamorph/metamorph-opencl_0.3-1_amd64.deb
+Size: 21936
+SHA256: 1f6d8521209f5f92b55759265b1175b5defd7a9a8983ce6584f079a580c033f1
+SHA1: b49f23b9339bae1a65818ada8582a7e6609e508c
+MD5sum: 57b4562c0e9ef50d8aacace988c593aa
+Description: MetaMorph OpenCL Backend
+ The MetaMorph OpenCL Backend implements the OpenCL versions of MetaMorph's top-level
+ functions.
+ It also provides OpenCL-specific functionality to support general OpenCL applications,
+ particularly those created with MetaCL.
+
+Package: metamorph-opencl-dev
+Source: metamorph
+Version: 0.3-1
+Architecture: all
+Maintainer: Paul Sathre <sath6220@cs.vt.edu>
+Installed-Size: 44
+Depends: metamorph-opencl, metamorph-dev, opencl-c-headers, ocl-icd-opencl-dev | nvidia-opencl-dev
+Suggests: metacl
+Priority: optional
+Section: libs
+Filename: pool/main/m/metamorph/metamorph-opencl-dev_0.3-1_all.deb
+Size: 8868
+SHA256: 6e5d614419cfee6f0d7a40db7c7993caae489a025238df8dc1f962bdcf6c7614
+SHA1: 5c80e7f664672ae0ebe0ab3b3b4c461e93533f89
+MD5sum: 4d035788bbc4bb37dc006b3f44010ae7
+Description: MetaMorph OpenCL Backend Headers
+ Header files to develop a new application using features specific to the OpenCL backend
+
+Package: metamorph-openmp
+Source: metamorph
+Version: 0.3-1
+Architecture: amd64
+Maintainer: Paul Sathre <sath6220@cs.vt.edu>
+Installed-Size: 67
+Depends: metamorph
+Enhances: metamorph
+Multi-Arch: same
+Priority: optional
+Section: libs
+Filename: pool/main/m/metamorph/metamorph-openmp_0.3-1_amd64.deb
+Size: 19104
+SHA256: 45ca4b25900bcfdb3f41e903d03323cceec63fb9ee15d1a3069fb1f386471c55
+SHA1: c7b9b39a6b57720ee61676336919de5bf214f3f5
+MD5sum: ff7ba55bab900a936dd4bd988046bfe6
+Description: MetaMorph OpenMP Backend
+ The MetaMorph OpenMP Backend implements OpenMP versions of MetaMorph's top-level functions
+
+Package: metamorph-openmp-dev
+Source: metamorph
+Version: 0.3-1
+Architecture: all
+Maintainer: Paul Sathre <sath6220@cs.vt.edu>
+Installed-Size: 27
+Depends: metamorph-openmp, metamorph-dev
+Priority: optional
+Section: libs
+Filename: pool/main/m/metamorph/metamorph-openmp-dev_0.3-1_all.deb
+Size: 4840
+SHA256: 0f98f9af8fbee59ffa031e41628e982d5f7d768a346fcec496f65602edc59fa6
+SHA1: 1d7226983b8d7f6d7f8328f3632ac0a1fbf180fc
+MD5sum: 4ad2b661fdaa1426ff4acf089350d5af
+Description: MetaMorph OpenMP Backend Headers
+ Header files to develop a new application using features specific to the OpenMP backend
+
+Package: metamorph-profiling
+Source: metamorph
+Version: 0.3-1
+Architecture: amd64
+Maintainer: Paul Sathre <sath6220@cs.vt.edu>
+Installed-Size: 27
+Depends: metamorph
+Enhances: metamorph
+Multi-Arch: same
+Priority: optional
+Section: libs
+Filename: pool/main/m/metamorph/metamorph-profiling_0.3-1_amd64.deb
+Size: 6452
+SHA256: b84af13f57235dccda56db202c23e4ebd52b1e795e6e664abab543f7f22cd60c
+SHA1: e4921566658e9dcd9b31ee419525bfc9c0621d42
+MD5sum: b8fc7c84c9c74286efe48ee327272d34
+Description: MetaMorph Profiling Plugin
+ Provides transparent profiling of MetaMorph API calls via backend-native
+ events.
+
+Package: metamorph-profiling-dev
+Source: metamorph
+Version: 0.3-1
+Architecture: all
+Maintainer: Paul Sathre <sath6220@cs.vt.edu>
+Installed-Size: 16
+Depends: metamorph-profiling, metamorph-dev
+Enhances: metamorph
+Priority: optional
+Section: libs
+Filename: pool/main/m/metamorph/metamorph-profiling-dev_0.3-1_all.deb
+Size: 4456
+SHA256: f029df037b0bca98ac17ff846a8240f926ba14e13d82377dd47f146f63a7af97
+SHA1: 93e00d817137fc10bb92ff3b29b96c6de6b143a7
+MD5sum: 29366433f25945d91912a340a9d4279b
+Description: MetaMorph Profiling Plugin
+ Header files to directly utilize MetaMorph's backend-native timing infrastructure.
+ Only necessary for developers adding timers to features that lie outside the core MetaMorph API.
+

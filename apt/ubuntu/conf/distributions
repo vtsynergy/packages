@@ -1,0 +1,15 @@
+Origin: https://github.com/vtsynergy/
+Label: VT Synergy Deb Repo
+Codename: bionic
+Architectures: amd64
+Components: main
+Description: APT/DPkg packages of select VT Synergy Group projects
+SignWith: 0x24912FC4B2CFA4B1
+
+Origin: https://github.com/vtsynergy/
+Label: VT Synergy Deb Repo
+Codename: focal
+Architectures: amd64
+Components: main
+Description: APT/DPkg packages of select VT Synergy Group projects
+SignWith: 0x24912FC4B2CFA4B1

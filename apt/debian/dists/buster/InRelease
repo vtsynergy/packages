@@ -1,0 +1,38 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Origin: https://github.com/vtsynergy/
+Label: VT Synergy Deb Repo
+Codename: buster
+Date: Fri, 29 May 2020 22:13:27 UTC
+Architectures: amd64
+Components: main
+Description: APT/DPkg packages of select VT Synergy Group projects
+MD5Sum:
+ faa99d12ceda90154da0794afc9c4935 8623 main/binary-amd64/Packages
+ 302b8bab7a6f81d87f5e3108eef4ec13 2681 main/binary-amd64/Packages.gz
+ 217135a5d11c1af14ec837b945267982 168 main/binary-amd64/Release
+SHA1:
+ 2773244897208f7a7bc4a495a8bf9596567ed3ed 8623 main/binary-amd64/Packages
+ 33160d8c4dbef761cd68cf1dd2ebdef3d709d250 2681 main/binary-amd64/Packages.gz
+ 6079330e7098ca4ceb5de3cf13104bf0bcadfe54 168 main/binary-amd64/Release
+SHA256:
+ e93078a0b57bd744edc91dd997262ae5f1fcda46b370075060ac83a3471ef900 8623 main/binary-amd64/Packages
+ 7dfa3fa618f3420bc4c2f5f5907a5b060365a115e59e503dd5364b361727f129 2681 main/binary-amd64/Packages.gz
+ 6baf4345b88a7e5216a0cd03e09350d2e9b17be22538ad862eaf64b3d3b64f4d 168 main/binary-amd64/Release
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCgAdFiEEX4W+eO0wJ8gW1olRJJEvxLLPpLEFAl7RiQgACgkQJJEvxLLP
+pLGzmhAAnpLhX4tDL7fk2m0B21X8qbEqNzE+XXut3LpXvknx7hR0HP7DHam43J+N
+MrNZTykm03x653dazkZPM5ozN4BDnS7DRl5UQleaf6xJI7QN927gzN4O7ZB/AUH5
+jFWLbaPw6z5s7xvPRclabRc2/XuyLnRgILBKze230/mYJ5j0aSU+YyhYBZdKQyuc
+g1+6xQ30TJfbV5urBFs1CQ1foseJ6rG+oaJVWtQ5OQ6vJW1xDX4mU159xIOiS3HK
+W5bNBOotskogVGwyHyqePurzn+EU+prER6PU1/tRObvac6t3XNYql/QzGrst3VPn
+vrk3VXDbNH2bfFv55rvivMovksVELMogCR3D2LVEtlS4q9Z4ZaqiDFEg4CfKDN8t
+Vuxu0avAUw9v/xf/pNdBB1Bj/pgf1SvmITVfpdpf4fT6qvVRPQ7/xMIQBLCLBW0G
+96mIIIBeqnM2nWgNlnJm+9Vllv4sGXlAEF1D3laDZ4T6cq4iC/x+SkKPeqzVVvzF
+bvwgYLSzsd3zQvPugksCKkt/Ob5dzN6nQm7ht2d5tXfs5GqD8Bjt/NXqzG6TNJZq
+FE9h/clOrwyOEgrqjcS97RBSkP+G33jZzKAYcroAfZh9VhRH+4TEhwzmt3/qunkQ
+lkZGkmcQhqlT1c2kiTKcw94WuOF5qaAJbaDsjOwb1Of/jtk8f6U=
+=SfaL
+-----END PGP SIGNATURE-----

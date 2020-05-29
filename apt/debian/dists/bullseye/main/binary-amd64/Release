@@ -1,0 +1,5 @@
+Component: main
+Origin: https://github.com/vtsynergy/
+Label: VT Synergy Deb Repo
+Architecture: amd64
+Description: APT/DPkg packages of select VT Synergy Group projects
