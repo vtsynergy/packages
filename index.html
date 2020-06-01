@@ -6,9 +6,17 @@
 <H2> APT/DPKG Packages</H2>
 To add the public key for these apt repositories run the following command<BR>
 <tt>wget -qO - https://vtsynergy.github.io/packages/synergy_package-pub.gpg.key | sudo apt-key add -</tt><BR>
+<BR>
 Then create an entry in <tt>/etc/apt/sources.list</tt> or a new file in <tt>/etc/apt/sources.list.d/</tt><BR>
 <tt>deb https://vtsynergy.github.io/packages/apt/&lt;OS&gt; &lt;distro&gt; main</tt><BR>
+<BR>
 where &lt;OS&gt; is one of [debian, ubuntu] and distro is a supported distribution. For debian, one of [jessie, stretch, buster, bullseye] and for ubuntu one of [bionic, focal].
+The GitHub packages page will require HTTPS, so if you do not already have <tt>apt-transport-https</tt> installed, then <tt> sudo apt-get install apt-transport-https</tt>.
+
+Then <tt>sudo apt-get update</tt> to read the package information from the new apt source. At this point, you should be able to use <tt>sudo apt-get install &lt;package(s)&gt;</tt> to retrieve any of our packages that are compatible with your distribution and their dependencies.
+<H3>Known Additional Steps:</H3><BR>
+<H4>MetaCL v0.3b on Debian Stretch:</H4> you will need to add <tt>stretch-backports</tt> to your Apt sources to pull in the Clang 6.0 dependency.<BR>
+<H4>MetaMorph-CUDA on Debain (all versions):</H4> The CUDA SDK and tools deb packages are in <tt>contrib</tt> and <tt>nonfree</tt>, so they will need to be added to your apt sources.<BR>
 <H2> RPM Packages </H2>
 	Coming Soon
 	</body>
