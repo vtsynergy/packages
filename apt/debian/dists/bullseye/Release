@@ -1,19 +1,19 @@
 Origin: https://github.com/vtsynergy/
 Label: VT Synergy Deb Repo
 Codename: bullseye
-Date: Fri, 29 May 2020 22:13:44 UTC
+Date: Wed, 20 Jan 2021 21:50:51 UTC
 Architectures: amd64
 Components: main
 Description: APT/DPkg packages of select VT Synergy Group projects
 MD5Sum:
- faa99d12ceda90154da0794afc9c4935 8623 main/binary-amd64/Packages
- 302b8bab7a6f81d87f5e3108eef4ec13 2681 main/binary-amd64/Packages.gz
+ f79260bc0e11a3bcc8d44408e598f9d0 8671 main/binary-amd64/Packages
+ 1815eed26e2e541653489859f3690a62 2678 main/binary-amd64/Packages.gz
  217135a5d11c1af14ec837b945267982 168 main/binary-amd64/Release
 SHA1:
- 2773244897208f7a7bc4a495a8bf9596567ed3ed 8623 main/binary-amd64/Packages
- 33160d8c4dbef761cd68cf1dd2ebdef3d709d250 2681 main/binary-amd64/Packages.gz
+ d7b3afdf536d8e2a47b6251d86a7781bed296d7a 8671 main/binary-amd64/Packages
+ 4081323e4f5a2bdef641dfe8223698c06e5a9cd9 2678 main/binary-amd64/Packages.gz
  6079330e7098ca4ceb5de3cf13104bf0bcadfe54 168 main/binary-amd64/Release
 SHA256:
- e93078a0b57bd744edc91dd997262ae5f1fcda46b370075060ac83a3471ef900 8623 main/binary-amd64/Packages
- 7dfa3fa618f3420bc4c2f5f5907a5b060365a115e59e503dd5364b361727f129 2681 main/binary-amd64/Packages.gz
+ 5a108d6e945047933d112f5c302961b5dfa2ac473ca0a429e97389fa8cec92f5 8671 main/binary-amd64/Packages
+ 8fd51cdd1278c080fc6aecb60ab2f4e3eea22e6c435e2dd491c0cf3ee00eebde 2678 main/binary-amd64/Packages.gz
  6baf4345b88a7e5216a0cd03e09350d2e9b17be22538ad862eaf64b3d3b64f4d 168 main/binary-amd64/Release
