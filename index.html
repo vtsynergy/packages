@@ -19,9 +19,9 @@ Then <tt>sudo apt-get update</tt> to read the package information from the new a
 <H4>MetaMorph-CUDA on Debain (all versions):</H4> The CUDA SDK and tools deb packages are in <tt>contrib</tt> and <tt>nonfree</tt>, so they will need to be added to your apt sources.<BR>
 <H2> RPM Packages </H2>
 To add the public key for these apt repositories run the following command<BR>
-<tt>wget https://vtsynergy.github.io/packages/synergy_package-pub.gpg.key && sudo rpm --import ./synergy_package-pub.gpg.key-</tt><BR>
+<tt>wget https://vtsynergy.github.io/packages/synergy_package-pub.gpg.key && sudo rpm --import ./synergy_package-pub.gpg.key</tt><BR>
 <BR>
-<tt>The create a new file /etc/yum.repos.d/VTSynergy.repo</tt>containing<BR>
+Then create a new file <tt>/etc/yum.repos.d/VTSynergy.repo</tt> containing<BR>
 <tt>
 	[vtsynergy]<BR>
 	name=VT Synergy Packages<BR>
